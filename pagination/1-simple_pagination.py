@@ -2,7 +2,6 @@
 """Simple pagination"""
 
 import csv
-import math
 from typing import List
 
 
@@ -39,8 +38,12 @@ class Server:
         """
         Get the data for a specific page.
         """
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer."
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer."
+        assert isinstance(page, int) and page > 0, (
+            "Page must be a positive integer."
+        )
+        assert isinstance(page_size, int) and page_size > 0, (
+            "Page size must be a positive integer."
+        )
 
         start, end = index_range(page, page_size)
         data = self.dataset()
