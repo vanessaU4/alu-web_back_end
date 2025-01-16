@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Simple Helper Function"""
+
+
 def index_range(page, page_size):
     """Return a simple helper function caontaining start and end index"""
     if (page == 1):
