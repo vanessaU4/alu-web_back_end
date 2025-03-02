@@ -7,3 +7,4 @@ export default function returnHowManyArguments(...args) {
   console.log(returnHowManyArguments(1, 2, 3)); // Output: 3
   console.log(returnHowManyArguments('a', 'b')); // Output: 2
   console.log(returnHowManyArguments()); // Output: 0
+  
